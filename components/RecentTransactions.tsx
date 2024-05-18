@@ -53,12 +53,7 @@ const RecentTransactions = ({
             key={account.id}
             className="space-y-4"
           >
-            <BankInfo
-              account={account}
-              appwriteItemId={appwriteItemId}
-              type="full"
-            />
-
+         
             <TransactionsTable transactions={currentTransactions} />
 
             {totalPages > 1 && (
